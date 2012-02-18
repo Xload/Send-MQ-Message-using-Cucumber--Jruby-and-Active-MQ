@@ -1,0 +1,31 @@
+Please ensure the following before running:
+
+1-Install Jruby V 1.6.5.1
+2-Install -cucumber 1.1.4
+3-Install and Set Up Activemq Version 5.5.1
+The code was developed on Eclipse Indigo and Mac Llion OS
+
+
+Please Note the code is still under development and has not been Junit tested yet.
+
+At the moment it has two main feature:
+
+1-Send and Receive Messages from JMOS queue and some validations on the received message.
+2-Read parameter from data XML pay load and replace it by values from data sheet. for example if I have the param ${User} in the pay load
+and in the data sheet I have column name User and the value for the user is Tom then the value within the xml will be replaced from ${Users} to Tom 
+
+Before sending or receiving message please change jndi.properties file to match your URL, queue name or topic name.
+
+You can start by running the features and then have a look at the java class call within rb or the java class using Eclipse.
+
+Last notice:
+
+The code is still under early development and will be changing frequently.
+The features and Scenarios are not based on any Business  stories.
+
+I will add a note to every method and class and if you notice that I have forgotten to add any note then please let me know
+  
+
+
+
+
